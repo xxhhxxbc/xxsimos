@@ -12,10 +12,8 @@ void *p0(void *arg)
         flag[0]=true;
         turn=1;
         while(flag[1]&&turn==1)
-        {
             Sleep(1);
-            printf("p0...\n");
-        }
+        printf("p0...\n");
         flag[0]=false;
     }
 }
@@ -27,10 +25,8 @@ void *p1(void *arg)
         flag[1]=true;
         turn=0;
         while(flag[0]&&turn==0)
-        {
             Sleep(1);
-            printf("p1...\n");
-        }
+        printf("p1...\n");
         flag[1]=false;
     }
 }
